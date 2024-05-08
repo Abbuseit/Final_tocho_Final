@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Canteen Management</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+<h1>Welcome to University Canteen</h1>
+<div id="menu"></div>
+<div id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="total">0.00</span></p>
+    <button onclick="checkout()">Checkout</button>
+</div>
+
+<div id="authButtons">
+    <button onclick="redirectToLogin()">Login</button>
+    <button onclick="redirectToRegister()">Register</button>
+
+</div>
+
+<script>
+    function redirectToLogin() {
+        window.location.href = "login.html";
+    }
+
+    function redirectToRegister() {
+        window.location.href = "register.html";
+    }
+</script>
+<script src="../static/js/script.js"></script>
+
+</body>
+</html>
